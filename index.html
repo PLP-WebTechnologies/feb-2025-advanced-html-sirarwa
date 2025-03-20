@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Registration</title>
+    <style>
+        /* Styling for a clean and readable form layout */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        form label, form input, form select, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Voter Registration Portal</h1>
+    </header>
+    <section>
+        <h2>Important Steps for Registration</h2>
+        <!-- Ordered list with roman numerals -->
+        <ol type="I">
+            <li>Check your eligibility</li>
+            <li>Gather necessary documents</li>
+            <li>Fill out the registration form</li>
+            <li>Submit the application</li>
+            <li>Receive confirmation</li>
+        </ol>
+    </section>
+    
+    <section>
+        <h2>Your Vote, Your Voice</h2>
+        <!-- External image from Pexels -->
+        <img src="https://images.pexels.com/photos/8849361/pexels-photo-8849361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Voter registration image" width="600">
+    </section>
+    
+    <section>
+        <h2>Contact List</h2>
+        <!-- Table containing 5 contacts -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St, NY</td>
+                    <td>+1 123 456 7890</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak St, LA</td>
+                    <td>+1 234 567 8901</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mark Johnson</td>
+                    <td>789 Pine St, TX</td>
+                    <td>+1 345 678 9012</td>
+                    <td>mark@example.com</td>
+                </tr>
+                <tr>
+                    <td>Sarah Brown</td>
+                    <td>101 Maple St, FL</td>
+                    <td>+1 456 789 0123</td>
+                    <td>sarah@example.com</td>
+                </tr>
+                <tr>
+                    <td>David Wilson</td>
+                    <td>202 Birch St, IL</td>
+                    <td>+1 567 890 1234</td>
+                    <td>david@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+     <!-- A simple Voter Registration Form -->
+    <section>
+        <h2>Voter Registration Form</h2>
+        <!-- Voter registration form starts here -->
+        <form action="#" method="POST">
+            <!-- First name input field -->
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+            
+            <!-- Second name input field -->
+            <label for="second_name">Second Name:</label>
+            <input type="text" id="second_name" name="second_name" placeholder="Enter your second name" required>
+            
+            <!-- National ID number input field -->
+            <label for="id_number">National ID Number:</label>
+            <input type="text" id="id_number" name="id_number" placeholder="Enter your ID number" required>
+            
+            <!-- Email input field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Password input field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <!-- Date of birth input field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <!-- Gender selection (radio buttons) -->
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+                <!-- Dropdown for selecting town -->
+            <label for="county">City:</label>
+            <select id="county" name="county" required>
+                <option value="">--Select--</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value="Kisumu">Kisumu</option>
+            </select>
+            <!-- Preferences selection (checkboxes) -->
+            <label>Preferences:</label>
+            <input type="checkbox" id="updates" name="preferences" value="updates">
+            <label for="updates">Receive Updates</label>
+            <input type="checkbox" id="newsletter" name="preferences" value="newsletter">
+            <label for="newsletter">Subscribe to Newsletter</label>
+            <!-- Submit button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
